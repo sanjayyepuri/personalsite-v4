@@ -148,3 +148,40 @@ table {
 .title {
   text-wrap: balance;
 }
+
+/* LaTeX/KaTeX styling */
+.katex {
+  font-size: 1em;
+}
+
+.katex-display {
+  @apply my-4;
+  text-align: center;
+}
+
+.katex-display > .katex {
+  display: inline-block;
+  text-align: initial;
+}
+
+/* Ensure LaTeX expressions are properly sized in prose */
+.prose .katex {
+  @apply text-neutral-800 dark:text-neutral-200;
+}
+
+.prose .katex-display {
+  @apply my-6 overflow-x-auto;
+}
+
+/* Make sure LaTeX scrolls on mobile if needed */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Fix for LaTeX in dark mode */
+@media (prefers-color-scheme: dark) {
+  .katex {
+    color: inherit;
+  }
+}
