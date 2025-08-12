@@ -6,6 +6,7 @@ import React from 'react'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import 'katex/dist/katex.min.css'
+import { basePath } from 'app/sitemap'
 
 function Table({ data }) {
   let headers = data.headers.map((header, index) => (
@@ -48,7 +49,12 @@ function CustomLink(props) {
 }
 
 function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />
+  // Handle basePath for images in static export
+  let src = props.src
+  if (src && src.startsWith('/') && !src.startsWith(basePath)) {
+    src = `${basePath}${src}`
+  }
+  return <Image alt={props.alt} className="rounded-lg" {...props} src={src} />
 }
 
 function Code({ children, ...props }) {

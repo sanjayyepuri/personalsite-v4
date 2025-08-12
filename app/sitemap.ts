@@ -1,6 +1,10 @@
 import { getBlogPosts } from 'app/blog/utils'
 
-export const baseUrl = 'https://sanjay.engineering/personalsite-v4'
+export const basePath = process.env.PAGES_BASE_PATH || ''
+
+export const baseUrl = basePath 
+  ? `https://sanjay.engineering${basePath}`
+  : 'https://sanjay.engineering'
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({
