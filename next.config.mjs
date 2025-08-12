@@ -1,6 +1,6 @@
 const nextConfig = {
   output: 'export',
-  basePath: process.env.PAGES_BASE_PATH,
+  basePath: process.env.NEXT_PUBLIC_PAGES_BASE_PATH,
 };
 
 export default nextConfig;

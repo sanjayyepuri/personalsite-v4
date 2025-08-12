@@ -1,6 +1,6 @@
 import { getBlogPosts } from 'app/blog/utils'
 
-export const basePath = process.env.PAGES_BASE_PATH || ''
+export const basePath = process.env.NEXT_PUBLIC_PAGES_BASE_PATH || ''
 
 export const baseUrl = basePath 
   ? `https://sanjay.engineering${basePath}`
