@@ -5,7 +5,7 @@ author: Sanjay Yepuri
 type: post
 ---
 
-I recently came across Edgser Dijkstra’s “A Very Humble Programmer.” This lecture resonated greatly with me. The ideas he described felt obvious to me and aligned with axioms that I already knew. However, hearing him speak about it convinced me that others may want to hear my thoughts. Now, I concede that a Turing Award is not in my near future.
+I recently came across Edsger Dijkstra’s “A Very Humble Programmer.” This lecture resonated greatly with me. The ideas he described felt obvious to me and aligned with axioms that I already knew. However, hearing him speak about it convinced me that others may want to hear my thoughts. Now, I concede that a Turing Award is not in my near future.
 
 Fortunately for me, I am not a very humble programmer. In fact, some may say I am arrogant. Personally, I want to set my naive ideas into stone, and hope to find later on how silly they were. Or maybe I’ll receive a Turing Award...
 
