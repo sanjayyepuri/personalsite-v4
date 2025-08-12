@@ -1,4 +1,5 @@
 import { BlogPosts } from 'app/components/posts'
+import { ExperienceList } from './components/resume'
 
 export default function Page() {
   return (
@@ -14,6 +15,9 @@ export default function Page() {
       </p>
       <div className="my-8">
         <BlogPosts />
+      </div>
+      <div>
+        <ExperienceList />
       </div>
     </section>
   )

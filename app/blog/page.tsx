@@ -1,4 +1,5 @@
 import { BlogPosts } from 'app/components/posts'
+import { ExperienceList } from 'app/components/resume'
 
 export const metadata = {
   title: 'Blog',
