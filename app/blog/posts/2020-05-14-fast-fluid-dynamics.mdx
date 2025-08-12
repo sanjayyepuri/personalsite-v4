@@ -5,6 +5,8 @@ author: Sanjay Yepuri & Helen Zhou
 type: post
 ---
 
+Co-authored by Sanjay Yepuri and Helen Zhou.
+
 Fluids can be found all around us; everything from a glass of water to a wisp of smoke is governed by the laws of fluid dynamics. These laws are ingrained in us when we watch how a river flows or ocean waves crash. As a result, efficient and accurate fluid simulation is crucial for animating games and movies.
 For our final project we implemented an algorithm called Fast Fluid Dynamics (FFD) using Rust and WebGL. This is a method for creating real-time, stable fluid simulations that run entirely on the GPU based on Jos Stam’s paper, “Stable Fluids” (Stam 1999). 
 
@@ -33,7 +35,7 @@ On a computer we represent a fluid as a 2D array of velocity vectors (or in the 
 
 In our implementation, these passes are fragment shaders written in GLSL. The velocity vector field is stored as a floating point RGB texture that is passed as a uniform to each shader program; the new vector field is then rendered to another texture. In order to be efficient, each pass has two textures which alternate as input and output. After we output the final velocity field, we advect the color field which is ultimately rendered to the screen.
 
-![Diagram illustrating the fluid shader pipeline, showing the flow of data between textures and shader programs.](../assets/fluid-shader-pipeline.png)
+![Diagram illustrating the fluid shader pipeline, showing the flow of data between textures and shader programs.](/images/fluid-shader-pipeline.png)
 
 ### Shader Programs
 

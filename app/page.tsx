@@ -14,9 +14,11 @@ export default function Page() {
           opportunities. Feel free to reach out!`}
       </p>
       <div className="my-8">
+        <h3 className="font-semibold my-2">Writing</h3>
         <BlogPosts />
       </div>
       <div>
+        <h3 className="font-semibold my-2">Experience</h3>
         <ExperienceList />
       </div>
     </section>

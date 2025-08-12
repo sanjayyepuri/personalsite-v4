@@ -7,14 +7,26 @@ const experienceItems: Array<{
   {
     title: "Quantitative Research Engineer",
     company: "Citadel GQS",
-    startDate: "Start Date",
-    endDate: "End Date",
+    startDate: "June 2025",
+    endDate: "Present",
   },
   {
     title: "Quantitative Trading Engineer",
     company: "Citadel GQS",
-    startDate: "Start Date",
-    endDate: "End Date",
+    startDate: "Aug. 2021",
+    endDate: "June 2025",
+  },
+  {
+    title: "Co-Founder and CTO",
+    company: "Coved",
+    startDate: "April 2020",
+    endDate: "Dec. 2022",
+  },
+  {
+    title: "Undergraduate Teaching Assistant",
+    company: "Department of Computer Science UT Austin",
+    startDate: "Aug. 2020",
+    endDate: "Dec. 2020",
   },
 ];
 
