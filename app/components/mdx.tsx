@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { highlight } from 'sugar-high'
 import React from 'react'
@@ -51,12 +50,14 @@ function CustomLink(props) {
 function RoundedImage(props) {
   // Handle basePath for images in static export
   let src = props.src
-  
+
   if (src && src.startsWith('/') && basePath && !src.startsWith(basePath)) {
     src = `${basePath}${src}`
   }
-  
-  return <Image alt={props.alt} className="rounded-lg" {...props} src={src} />
+
+  // For static export, use regular img tag instead of Next.js Image
+  // since Image optimization requires a server
+  return <img alt={props.alt} className="rounded-lg" {...props} src={src} />
 }
 
 function Code({ children, ...props }) {
