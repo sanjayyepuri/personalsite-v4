@@ -25,7 +25,7 @@ export function BlogPosts() {
               <h3>{post.metadata.title}</h3>
             </div>
             <div className="flex flex-col items-end">
-              <p className="text-sm text-gray-500">{post.metadata.publishedAt}</p>
+              <p className="text-sm text-gray-800 dark:text-gray-500">{post.metadata.publishedAt}</p>
             </div>
           </Link>
         ))}

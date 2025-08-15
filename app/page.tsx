@@ -21,10 +21,6 @@ export default function Page() {
         <h3 className="font-semibold my-2">Experience</h3>
         <ExperienceList />
       </div>
-
-      <div>
-        <p> ⚠️ Sorry for the rough edges, blog is still in development.</p>
-      </div>
     </section>
   )
 }

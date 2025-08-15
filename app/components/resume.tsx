@@ -37,10 +37,10 @@ export function ExperienceList() {
         <li className="flex" key={index}>
           <div className="flex-1">
             <h3>{experience.title}</h3>
-            <p className="text-sm text-gray-500">{experience.company}</p>
+            <p className="text-sm text-gray-800 dark:text-gray-500">{experience.company}</p>
           </div>
           <div className="flex flex-col items-end">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-800 dark:text-gray-500">
               {experience.startDate} - {experience.endDate}
             </p>
           </div>
