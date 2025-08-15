@@ -51,9 +51,11 @@ function CustomLink(props) {
 function RoundedImage(props) {
   // Handle basePath for images in static export
   let src = props.src
-  if (src && src.startsWith('/') && !src.startsWith(basePath)) {
+  
+  if (src && src.startsWith('/') && basePath && !src.startsWith(basePath)) {
     src = `${basePath}${src}`
   }
+  
   return <Image alt={props.alt} className="rounded-lg" {...props} src={src} />
 }
 
@@ -102,6 +104,7 @@ let components = {
   h4: createHeading(4),
   h5: createHeading(5),
   h6: createHeading(6),
+  img: RoundedImage,
   Image: RoundedImage,
   a: CustomLink,
   code: Code,

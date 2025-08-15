@@ -1,5 +1,6 @@
 import { getBlogPosts } from 'app/blog/utils'
 
+// Ensure basePath is available at static compilation time
 export const basePath = process.env.NEXT_PUBLIC_PAGES_BASE_PATH || ''
 
 export const baseUrl = basePath 
