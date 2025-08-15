@@ -1,17 +1,15 @@
-import { BlogPosts } from 'app/components/posts'
-import { ExperienceList } from './components/resume'
+import { BlogPosts } from "app/components/posts";
+import { ExperienceList } from "./components/resume";
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-       sanjay
+        sanjay <span className="font-light"> • chasing light </span>
       </h1>
       <p className="mb-4">
-        {`I’m a software engineer with degrees in Math and Computer Science
-          from UT Austin. I’ve been in the industry for four years now and
-          always love chatting about tech, cool articles, or new
-          opportunities. Feel free to reach out!`}
+        {`I build systems that run fast, scale gracefully, and are aggressively simple. My life lives at the intersection of mathematics, code, and design.
+        I believe in first principles, deliberate craftsmanship, and ideas that endure. The rest is just implementation detail.`}
       </p>
       <div className="my-8">
         <h3 className="font-semibold my-2">Writing</h3>
@@ -22,5 +20,5 @@ export default function Page() {
         <ExperienceList />
       </div>
     </section>
-  )
+  );
 }

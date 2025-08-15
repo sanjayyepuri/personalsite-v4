@@ -6,27 +6,21 @@ const experienceItems: Array<{
 }> = [
   {
     title: "Quantitative Research Engineer",
-    company: "Citadel GQS",
+    company: "Citadel | GQS",
     startDate: "June 2025",
     endDate: "Present",
   },
   {
     title: "Quantitative Trading Engineer",
-    company: "Citadel GQS",
+    company: "Citadel | GQS",
     startDate: "Aug. 2021",
     endDate: "June 2025",
   },
   {
     title: "Co-Founder and CTO",
-    company: "Coved",
+    company: "CovEd",
     startDate: "April 2020",
     endDate: "Dec. 2022",
-  },
-  {
-    title: "Undergraduate Teaching Assistant",
-    company: "Department of Computer Science UT Austin",
-    startDate: "Aug. 2020",
-    endDate: "Dec. 2020",
   },
 ];
 
@@ -34,15 +28,16 @@ export function ExperienceList() {
   return (
     <ul>
       {experienceItems.map((experience, index) => (
-        <li className="flex" key={index}>
+        <li className="flex my-2" key={index}>
           <div className="flex-1">
             <h3>{experience.title}</h3>
-            <p className="text-sm text-gray-800 dark:text-gray-500">{experience.company}</p>
-          </div>
-          <div className="flex flex-col items-end">
             <p className="text-sm text-gray-800 dark:text-gray-500">
               {experience.startDate} - {experience.endDate}
             </p>
+          </div>
+          <div className="flex flex-col items-end">
+
+            <p className="text-sm text-gray-800 dark:text-gray-500">{experience.company}</p>
           </div>
         </li>
       ))}
