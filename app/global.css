@@ -23,6 +23,16 @@ html {
   min-width: 360px;
 }
 
+.sky-gradient {
+  /* Handle iOS 26 Safari Liquid Glass UI extending content beyond viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Use large viewport height to handle iOS 26 VH changes */
+  height: 100lvh;
+}
+
 .prose .anchor {
   @apply absolute invisible no-underline;
 
