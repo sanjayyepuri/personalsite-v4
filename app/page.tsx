@@ -1,5 +1,6 @@
 import { BlogPosts } from "app/components/posts";
 import { ExperienceList } from "./components/resume";
+import { ProjectList } from "./components/projects";
 
 export default function Page() {
   return (
@@ -12,6 +13,10 @@ export default function Page() {
           I believe in first principles, deliberate craftsmanship, and ideas that endure. The rest is just implementation detail.
         `}
       </p>
+      <div className="my-8">
+        <h3 className="font-semibold my-2">Projects</h3>
+        <ProjectList />
+      </div>
       <div className="my-8">
         <h3 className="font-semibold my-2">Writing</h3>
         <BlogPosts />
